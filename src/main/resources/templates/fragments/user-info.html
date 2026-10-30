@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:fragment="userInfo" class="user-card">
+        <div class="user-avatar" th:text="${user.name.substring(0,1)}">U</div>
+        <div class="user-info">
+            <div><strong th:text="${user.name}">Nombre</strong> (<span th:text="${user.userName}">usuario</span>)</div>
+            <div>Email: <span th:text="${user.email}">correo</span></div>
+            <div>Tipo: <span th:text="${user.type}">tipo</span></div>
+        </div>
+    </div>
+</body>
+</html>
